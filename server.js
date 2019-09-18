@@ -40,10 +40,10 @@ app.post('/SignUp', (req, res) => {
 });
 
 
+const PORT = process.env.PORT || "80"
 
-
-app.listen('80', () => {
-    console.log('Server started on port 500');
+app.listen(PORT, () => {
+    console.log('Server started on port '+PORT);
 });
 
 
